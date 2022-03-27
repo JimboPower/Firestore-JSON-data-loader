@@ -19,7 +19,6 @@ print("File opened!")
 
 
 for location in data:
-    counter += 1
     doc_ref = db.collection('elements').document()
     loc = [location['l'][0], location['l'][1]]
     doc_ref.set({
